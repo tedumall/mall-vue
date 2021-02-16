@@ -3,6 +3,7 @@ import request from '@/utils/request'
 export function login(username, password) {
   return request({
     url: '/token/login',
+    // url: '/admin/login',
     method: 'post',
     data: {
       username,
@@ -14,20 +15,22 @@ export function login(username, password) {
 export function getInfo() {
   return request({
     url: '/users/info',
+    // url: '/admin/info',
     method: 'get',
   })
 }
 
 export function logout() {
   return request({
-    url: '/admin/logout',
+    // url: '/admin/logout',
+    url: '/token/logout',
     method: 'post'
   })
 }
 
 export function fetchList(params) {
   return request({
-    url: '/admin/list',
+    url: '/users/list',
     method: 'get',
     params: params
   })
