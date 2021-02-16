@@ -20,14 +20,14 @@ export function getInfo() {
 
 export function logout() {
   return request({
-    url: '/admin/logout',
+    url: '/users/logout',
     method: 'post'
   })
 }
 
 export function fetchList(params) {
   return request({
-    url: '/admin/list',
+    url: '/users/list',
     method: 'get',
     params: params
   })

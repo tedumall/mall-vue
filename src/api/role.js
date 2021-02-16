@@ -42,7 +42,7 @@ export function deleteRole(data) {
 
 export function fetchAllRoleList() {
   return request({
-    url: '/role/listAll',
+    url: '/users/role/listAll',
     method: 'get'
   })
 }
