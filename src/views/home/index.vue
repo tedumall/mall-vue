@@ -1,5 +1,25 @@
 <template>
   <div class="app-container">
+    <div class="address-layout">
+      <el-row :gutter="20">
+        <el-col :span="9">
+          <div class="out-border">
+            <div class="layout-title">后台项目</div>
+            <div class="color-main address-content">
+              <a href="https://github.com/tedumall/mall_backend">mall_backend</a>
+            </div>
+          </div>
+        </el-col>
+        <el-col :span="9">
+          <div class="out-border">
+            <div class="layout-title">前端项目</div>
+            <div class="color-main address-content">
+              <a href="https://github.com/tedumall/mall-vue">mall-vue</a>
+            </div>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
     <div class="total-layout">
       <el-row :gutter="20">
         <el-col :span="6">
